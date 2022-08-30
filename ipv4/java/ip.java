@@ -98,11 +98,6 @@ public class Ip {
         return result;
     }
 
-    public static void main(String[] args) {
-
-        Ip ip = Ip.getInstance();
-        System.out.println(ip.Get("35.201.142.37"));
-
-    }
+  
 
 }
