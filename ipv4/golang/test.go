@@ -29,6 +29,9 @@ type IpInfos struct {
 func main() {
 	str, _ := ipdatacloud.GetObject().Get("220.162.31.109")
 	infos := strings.Split(str, "|")
+	if len(infos) < 14 {
+		return
+	}
 	ips := &IpInfos{
 		Continent:      infos[0],
 		Country:        infos[1],
