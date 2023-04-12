@@ -70,7 +70,7 @@ namespace ipdatacloud_dat
             {
                 IncludeSubdirectories = false,
                 NotifyFilter = NotifyFilters.LastWrite,
-                Filter = "qqzeng-ip-ultimate.dat",
+                Filter = "ipdatacloud_city.dat",
             };
 
             watcher.Changed += (s, e) =>
